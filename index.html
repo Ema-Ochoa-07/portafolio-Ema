@@ -17,17 +17,11 @@
     <link rel="stylesheet" href="assets/css/styles.css">  
 
     <!--=============== JS ===============-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
     <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
     <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "mEM0k1SRHzeKj_zJs",
-        });
-    })();
+     emailjs.init('mEM0k1SRHzeKj_zJs')
     </script>
 
 
@@ -42,7 +36,7 @@
 
             <a href="#" class="nav__logo">
                 <span class="nav__logo-circle">P</span>
-                <span class="nav__logo-name">Mi Portafolio.</span>
+                <a href="#home" class="nav__logo-name">Mi Portafolio.</a>
             </a>
             
             <div class="nav__menu" id="nav-menu">
@@ -52,16 +46,16 @@
                 <ul class="nav__list">
 
                     <li class="nav-item">
-                        <a href="#home" class="nav__link">Inicio</a>
+                        <a href="#home" class="nav__link item-home">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav__link">Acerca de Mi</a>
+                        <a href="#about" class="nav__link item-about">Acerca de Mi</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#projects" class="nav__link">Proyectos</a>
+                        <a href="#projects" class="nav__link  item-project">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav__link">Contacto</a>
+                        <a href="#contact" class="nav__link item-contact">Contacto</a>
                     </li>
                 </ul>
                 <!-------- Close Button  ------->
@@ -85,10 +79,9 @@
     <main class="main">
         <!--=============== HOME ===============-->
         <section class="home section" id=home>
+            <h1 class="home__name">Enmanuel Ochoa</h1>
             <div class="home__container container grid">
 
-                <h1 class="home__name">Enmanuel Ochoa</h1>
-                
                 <div class="home__perfil">
 
                     <div class="home__image">
@@ -107,7 +100,7 @@
                             <i class="ri-linkedin-box-fill"></i>
                         </a>
 
-                        <a href="https://github.com/Ema-Ochoa-07" target="_blank" class="home__social-link">
+                        <a href="https://github.com/Ema-Ochoa-07" target="_blank" class="home__social-link-medium">
                             <i class="ri-github-fill"></i>
                         </a>
 
@@ -121,7 +114,7 @@
                     <p class="home__description">
                         Soy Ingeniero de Sistemas enfocado en el <b>"Diseño y Desarrollo de Software"</b>
                         para aplicaciones tipo web, me desmpeño como programador "Full Stack" en tecnologías
-                        como: <i>React</i> en la ámbito de FrontEnd y <i>Node</i> en el ámbito de BackEnd.
+                        como: <k>React</k> en el ámbito de FrontEnd y <k>Node</k> en el ámbito de BackEnd.
                     </p>
 
 
@@ -138,251 +131,253 @@
                 </div>
             </div>
         </section>
+
+                                <!--=============== ABOUT ME ===============-->
+                                <section class="about__section" id="about">
+                                    <div class="about__container container grid">
+                                        <h2 class="section__title-1"> Acerca de mi.</h2>
+                                        <div class="about__perfil">
+                                            <div class="about__image">
+                                                
+                                                <img src="assets/img/aboutMe.png" alt="image" class="about__img">
+                                                <div class="about__shadow"></div>
+                                                
+                                                <div class="about__box"></div>
+                                                <img src="assets/img/random-lines.svg" alt="" class="about__line">
+                                                <div class="geometric-box"></div>
+                                            </div>                   
+                                        </div>
+                        
+                                        <div class="about__info">
+                                            <p class="about__description-1">
+                                                Soy alguien responsable, bastante dinámico, con deseos de superación; mis metas están basadas 
+                                                en el <strong>logro de objetivos claros</strong>; aprendo rápido, cumplo de manera adecuada con puntualidad, 
+                                                honestidad y responsabilidad en las distintas actividades que realizo. 
+                                            </p>
+                                            <p class="about__description-2">
+                                                Actualmente soy graduado de Ingeniería de Sistemas, 
+                                                donde luego he podido fortalecer mis habilidades y destrezas en varios
+                                                campos tales como: Desarrollo de software, Redes y 
+                                                telecomunicaciones, Soporte Técnico, Seguridad Informática, Gestión de proyectos, etc.
+                                            </p>
+                                            <ul class="about__list">
+                                                <li class="about__item">
+                                                    <b>Mis habilidades son:</b>
+                                                    Html, Css, JavaScript, Git & GitHub, React, Node, sql, Mysql, PostgresSql
+                                                </li>
+                                            </ul>
+                                            <div class="about__buttons">
+                                                <a href="#contact" class="button">
+                                                    <i class="ri-contacts-line"></i>Contacto
+                                                </a>
+                        
+                                                <a href="https://www.linkedin.com/in/enmanuel-david-ochoa-cede%C3%B1o-185b611b3/" class="button__ghost" target="_blank">
+                                                    <i class="ri-linkedin-box-line"></i>                                
+                                                </a>
+                                            </div>
+                        
+                                        </div>
+                                    </div>
+                                </section>
+
+                <!--=============== Studies ===============-->
+                <section class="studies__section">
+                    <h2 class="section__title-2">
+                        <span>Estudios.</span>
+                    </h2>
         
-        <!--=============== ABOUT ME ===============-->
-        <section class="about__section" id="about">
-            <div class="about__container container grid">
-                <h2 class="section__title-1"> Acerca de mi.</h2>
-                <div class="about__perfil">
-                    <div class="about__image">
-                        
-                        <img src="assets/img/aboutMe.png" alt="image" class="about__img">
-                        <div class="about__shadow"></div>
-                        
-                        <div class="about__box"></div>
-                        <img src="assets/img/random-lines.svg" alt="" class="about__line">
-                        <div class="geometric-box"></div>
-                    </div>                   
-                </div>
-
-                <div class="about__info">
-                    <p class="about__description-1">
-                        Soy alguien responsable, bastante dinámico, con deseos de superación; mis metas están basadas 
-                        en el <strong>logro de objetivos claros</strong>; aprendo rápido, cumplo de manera adecuada con puntualidad, 
-                        honestidad y responsabilidad en las distintas actividades que realizo. 
-                    </p>
-                    <p class="about__description-2">
-                        Actualmente soy graduado de Ingeniería de Sistemas, 
-                        donde luego he podido fortalecer mis habilidades y destrezas en varios
-                        campos tales como: Desarrollo de software, Redes y 
-                        telecomunicaciones, Soporte Técnico, Seguridad Informática, Gestión de proyectos, etc.
-                    </p>
-                    <ul class="about__list">
-                        <li class="about__item">
-                            <b>Mis habilidades son:</b>
-                            HTML, Css, JavaScript, Git & GitHub, React, Node, sql, Mysql, PostgresSql
-                        </li>
-                    </ul>
-                    <div class="about__buttons">
-                        <a href="#contact" class="button">
-                            <i class="ri-contacts-line"></i>Contacto
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/enmanuel-david-ochoa-cede%C3%B1o-185b611b3/" class="button__ghost" target="_blank">
-                            <i class="ri-linkedin-box-line"></i>                                
-                        </a>
+                    <div class="studies__container container grid">
+                        <article class="studies__card">
+                            <div class="studies__border"></div>
+                            <div class="studies__content">
+                                <div class="studies__icon">
+                                    <div class="studies__box"></div>
+                                    <i class="ri-layout-4-line"></i>
+                                </div>
+                                <h2 class="studies__title">
+                                    Ingeniero de sistemas
+                                </h2>
+                                <p class="studies__description">
+                                    Graduado en el año 2020 de la <strong><i>"Universidad Mariana"</i> </strong>ubicada en la 
+                                    ciudad de Pasto - Colombia, obteniendo el título de 3er nivel "Pregrado" bajo la modalidad presencial.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="studies__card">
+                            <div class="studies__border"></div>
+                            <div class="studies__content">
+                                <div class="studies__icon">
+                                    <div class="studies__box"></div>
+                                    <i class="ri-code-box-line"></i>
+                                </div>
+                                <h2 class="studies__title">
+                                    Dev. FrontEnd - React
+                                </h2>
+                                <p class="studies__description">
+                                    Graduado en el año 2024 de la academia multinacional de estudios de programación <strong><i>"Academlo"</i> </strong>
+                                    , como FrontEnd Developer en React, obteniendo el título bajo en la modalidad remoto.
+                                </p>
+                            </div>
+                        </article>
+        
+                        <article class="studies__card">
+                            <div class="studies__border"></div>
+                            <div class="studies__content">
+                                <div class="studies__icon">
+                                    <div class="studies__box"></div>
+                                    <i class="ri-smartphone-line"></i>
+                                </div>
+                                <h2 class="studies__title">
+                                    Dev. BackEnd - Node
+                                </h2>
+                                <p class="studies__description">
+                                    Graduado en el año 2024 de la academia multinacional de estudios de programación <strong><i>"Academlo"</i> </strong>
+                                    , como BackEnd Developer en Node, obteniendo el título bajo en la modalidad remoto.
+                                </p>
+                            </div>
+                        </article>
+        
                     </div>
+                </section>    
 
-                </div>
-            </div>
-        </section>
-
-        <!--=============== SERVICES ===============-->
-        <section class="services__section">
-            <h2 class="section__title-2">
-                <span>Servicios.</span>
-            </h2>
-
-            <div class="services__container container grid">
-                <article class="services__card">
-                    <div class="services__border"></div>
-                    <div class="services__content">
-                        <div class="services__icon">
-                            <div class="services__box"></div>
-                            <i class="ri-layout-4-line"></i>
-                        </div>
-                        <h2 class="services__title">
-                            Diseño de Interfaz
-                        </h2>
-                        <p class="services__description">
-                            Hermoso y elegante diseño web, con interfaz intuitivo, eficiente y
-                            placentero para el usuario al momento de su intercción
-                        </p>
-                    </div>
-                </article>
-                <article class="services__card">
-                    <div class="services__border"></div>
-                    <div class="services__content">
-                        <div class="services__icon">
-                            <div class="services__box"></div>
-                            <i class="ri-code-box-line"></i>
-                        </div>
-                        <h2 class="services__title">
-                            Desarrollo Web
-                        </h2>
-                        <p class="services__description">
-                            Hermoso y elegante diseño web, con interfaz intuitivo, eficiente y
-                            placentero para el usuario al momento de su intercción
-                        </p>
-                    </div>
-                </article>
-
-                <article class="services__card">
-                    <div class="services__border"></div>
-                    <div class="services__content">
-                        <div class="services__icon">
-                            <div class="services__box"></div>
-                            <i class="ri-smartphone-line"></i>
-                        </div>
-                        <h2 class="services__title">
-                            Aplicativo Movil
-                        </h2>
-                        <p class="services__description">
-                            Hermoso y elegante diseño web, con interfaz intuitivo, eficiente y
-                            placentero para el usuario al momento de su intercción
-                        </p>
-                    </div>
-                </article>
-
-            </div>
-        </section>    
-
-        <!--=============== PROJECTS ===============-->
-        <section class="projects__section" id="projects">
-            <h2 class="section__title-1">Proyectos.</h2>
-            <div class="projects__container container grid">
-                <article class="projects__card">
-
-                    <div class="projects__content">
-                        <h3 class="projects__title">Aplicativo Movil</h3>
-                        <img src="assets/img/app1.jpg" alt="image" class="projects_img">                        
-                    </div>
-
-                    <div class="projects__effect">
-                        <i class="ri-arrow-right-up-line"></i>                       
-                                                    
-                        </p>
-                    </div>
-                    <div class="projects__matter">
-                        <h3>Today a Pick</h3>
-                        <p class="projects__description">
-                            Este proyecto es un aplicativo movil, el cual está enfocado especialmente 
-                            en el rendimiento y desempeño deportivo de las personas.
-                        </p>
-                    </div>
-                </article>
-                <article class="projects__card">
-
-                    <div class="projects__content">
-                        <h3 class="projects__title">Aplicativo movil</h3>
-                        <img src="assets/img/app3.jpg" alt="image" class="projects_img">                        
-                    </div>
-
-                    <div class="projects__effect">
-                        <i class="ri-arrow-right-up-line"></i>                       
-                                                    
-                        </p>
-                    </div>
-                    <div class="projects__matter">
-                        <h3>BookAPP</h3>
-                        <p class="projects__description">
-                            Aplicativo movil para appstore enfocado en la compra
-                            y alquiler de libros en linea, o con opción de subscripción 
-                            a planes locales y globales.
-                        </p>
-                    </div>
-                </article>
-                <article class="projects__card">
-
-                    <div class="projects__content">
-                        <h3 class="projects__title">Desarrollo web</h3>
-                        <img src="assets/img/dw2.jpg" alt="image" class="projects_img">                        
-                    </div>
-
-                    <div class="projects__effect">
-                        <i class="ri-arrow-right-up-line"></i>                       
-                                                    
-                        </p>
-                    </div>
-                    <div class="projects__matter">
-                        <h3>Landing page</h3>
-                        <p class="projects__description">
-                            Página de aterrizaje orientada al negocio de restaurante, con 
-                            funcionalidad de chequeo de menu, pagos en línea, reservaciones, 
-                            etc.
-
-                        </p>
-                    </div>
-                </article>
-                <article class="projects__card">
-
-                    <div class="projects__content">
-                        <h3 class="projects__title">Aplicativo movil</h3>
-                        <img src="assets/img/app2.jpg" alt="image" class="projects_img">                        
-                    </div>
-
-                    <div class="projects__effect">
-                        <i class="ri-arrow-right-up-line"></i>                       
-                                                    
-                        </p>
-                    </div>
-                    <div class="projects__matter">
-                        <h3>AppNameSalud</h3>
-                        <p class="projects__description">
-                            Aplicativo en el área de la salud que permite, revisar tanto cistas médicas,
-                            almacenar historial clínico, controles corporales, etc.
-                        </p>
-                    </div>
-                </article>
-                <article class="projects__card">
-
-                    <div class="projects__content">
-                        <h3 class="projects__title">Aplicativo Multiplataforma</h3>
-                        <img src="assets/img/dw1.jpg" alt="image" class="projects_img">                        
-                    </div>
-
-                    <div class="projects__effect">
-                        <i class="ri-arrow-right-up-line"></i>                       
-                                                    
-                        </p>
-                    </div>
-                    <div class="projects__matter">
-                        <h3>WebsiteApp</h3>
-                        <p class="projects__description">
-                            Aplicativo multiplataforma utilizable tanto ios, andoid, 
-                            computadores laptos y desktop, de forma responsiva 
-                            y adatativa a cada dispositivo.
-                        </p>
-                    </div>
-                </article>
-                <article class="projects__card">
-
-                    <div class="projects__content">
-                        <h3 class="projects__title">Aplicativo movil</h3>
-                        <img src="assets/img/d3.webp" alt="image" class="projects_img">                        
-                    </div>
-
-                    <div class="projects__effect">
-                        <i class="ri-arrow-right-up-line"></i>                       
-                                                    
-                        </p>
-                    </div>
-                    <div class="projects__matter">
-                        <h3> Clap</h3>
-                        <p class="projects__description">
-                            Es un aplicativo movil empresarial que permite el 
-                            control contable y nominal de toda la organización. 
-                    
+                <!--=============== PROJECTS ===============-->
+                <section class="projects__section" id="projects">
+                    <h2 class="section__title-1">Proyectos.</h2>
+                    <div class="projects__container container grid">
+                        <article class="projects__card">
+        
+                            <div class="projects__content">
+                                <h3 class="projects__title">Aplicativo Movil</h3>
+                                <img src="assets/img/project1.jpg" alt="image" class="projects_img">                        
+                            </div>
+        
+                            <div class="projects__effect">
+                                <i class="ri-arrow-right-up-line"></i>                       
+                                                            
+                                </p>
+                            </div>
+                            <div class="projects__matter">
+                                <h3>Today a Pick</h3>
+                                <p class="projects__description">
+                                    Este proyecto es un aplicativo movil, el cual está enfocado especialmente 
+                                    en el rendimiento y desempeño deportivo de las personas.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+        
+                            <div class="projects__content">
+                                <h3 class="projects__title">Aplicativo movil</h3>
+                                <img src="assets/img/project2.jpg" alt="image" class="projects_img">                        
+                            </div>
+        
+                            <div class="projects__effect">
+                                <i class="ri-arrow-right-up-line"></i>                       
+                                                            
+                                </p>
+                            </div>
+                            <div class="projects__matter">
+                                <h3>BookAPP</h3>
+                                <p class="projects__description">
+                                    Aplicativo movil para appstore enfocado en la compra
+                                    y alquiler de libros en linea, o con opción de subscripción 
+                                    a planes locales y globales.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+        
+                            <div class="projects__content">
+                                <h3 class="projects__title">Desarrollo web</h3>
+                                <img src="assets/img/project3.jpg" alt="image" class="projects_img">                        
+                            </div>
+        
+                            <div class="projects__effect">
+                                <i class="ri-arrow-right-up-line"></i>                       
+                                                            
+                                </p>
+                            </div>
+                            <div class="projects__matter">
+                                <h3>Landing page</h3>
+                                <p class="projects__description">
+                                    Página de aterrizaje orientada al negocio de restaurante, con 
+                                    funcionalidad de chequeo de menu, pagos en línea, reservaciones, 
+                                    etc.
+        
+                                </p>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+        
+                            <div class="projects__content">
+                                <h3 class="projects__title">Aplicativo movil</h3>
+                                <img src="assets/img/project4.jpg" alt="image" class="projects_img">                        
+                            </div>
+        
+                            <div class="projects__effect">
+                                <i class="ri-arrow-right-up-line"></i>                       
+                                                            
+                                </p>
+                            </div>
+                            <div class="projects__matter">
+                                <h3>AppNameSalud</h3>
+                                <p class="projects__description">
+                                    Aplicativo en el área de la salud que permite, revisar tanto cistas médicas,
+                                    almacenar historial clínico, controles corporales, etc.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+        
+                            <div class="projects__content">
+                                <h3 class="projects__title">Aplicativo Multiplataforma</h3>
+                                <img src="assets/img/project5.jpg" alt="image" class="projects_img">                        
+                            </div>
+        
+                            <div class="projects__effect">
+                                <i class="ri-arrow-right-up-line"></i>                       
+                                                            
+                                </p>
+                            </div>
+                            <div class="projects__matter">
+                                <h3>WebsiteApp</h3>
+                                <p class="projects__description">
+                                    Aplicativo multiplataforma utilizable tanto ios, andoid, 
+                                    computadores laptos y desktop, de forma responsiva 
+                                    y adatativa a cada dispositivo.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="projects__card">
+        
+                            <div class="projects__content">
+                                <h3 class="projects__title">Aplicativo movil</h3>
+                                <img src="assets/img/project6.jpg" alt="image" class="projects_img">                        
+                            </div>
+        
+                            <div class="projects__effect">
+                                <i class="ri-arrow-right-up-line"></i>                       
+                                                            
+                                </p>
+                            </div>
+                            <div class="projects__matter">
+                                <h3> Clap</h3>
+                                <p class="projects__description">
+                                    Es un aplicativo movil empresarial que permite el 
+                                    control contable y nominal de toda la organización. 
                             
-                        </p>
+                                    
+                                </p>
+                            </div>
+                        </article>
+        
+        
+        
+                        
                     </div>
-                </article>
+                </section>
+        
 
-
-
-                
-            </div>
-        </section>
 
         <!--=============== CONTACT ===============-->
         <section class="contact__section" id="contact">
@@ -411,52 +406,54 @@
 
        <!--=============== FORM ===============-->
         
-        <section class="form__section">
+        <div class="form__main">
+            <section class="form__section">
 
-            <form action="" class="form" id="contact-form">
-                <h2 class="form__header">
-                    <span>Enviar Mensaje.</span>
-                </h2>
-                <div class="form__container">
-                    <div class="form__group">
-                        <input type="text" name="user_name" class="contact__input" id="user_name" placeholder="Enmanuel" required>
-                        <label for="name" class="contact__label">Nombre</label>
-                        <span class="form__line"></span>
+                <form action="" class="form" id="contact-form">
+                    <h2 class="form__header">
+                        <span>Enviar Mensaje.</span>
+                    </h2>
+                    <div class="form__container">
+                        <div class="form__group">
+                            <input type="text" name="user_name" class="contact__input" id="user_name" placeholder="Enmanuel" required>
+                            <label for="name" class="contact__label">Nombre</label>
+                            <span class="form__line"></span>
+                        </div>
+    
+                        <div class="form__group">
+                            <input type="text" name="last_name" class="contact__input" id="last_name" placeholder="Ochoa" required>
+                            <label for="last-name" class="contact__label">Apellido</label>
+                            <span class="form__line"></span>
+                        </div>
+    
+                        <div class="form__group">
+                            <input type="email" name="user_email" class="contact__input" id="user_email"placeholder="pablo_perez@gmail.com" required>
+                            <label for="email" class="contact__label">Correo</label>
+                            <span class="form__line"></span>
+                        </div>
+    
+                        <div class="form__group">
+                            <input type="text" name="user_subject" class="contact__input" id="user_subject" placeholder="Subject" required>
+                            <label for="subject" class="contact__label">Asunto</label>
+                            <span class="form__line"></span>
+                        </div>
                     </div>
-
-                    <div class="form__group">
-                        <input type="text" name="last_name" class="contact__input" id="last_name" placeholder="Ochoa" required>
-                        <label for="last-name" class="contact__label">Apellido</label>
-                        <span class="form__line"></span>
+    
+    
+                    <div class="form__container-area">
+                        
+                        <div class="form__group">
+                            <textarea name="user_message" id="user_message" class="contact__input" rows= 5 cols=21   placeholder="Mensaje..." required></textarea 
+                                <label for="message" class="contact__label">Mensaje</label>
+                            <span class="form__line"></span>
+                        </div>
                     </div>
-
-                    <div class="form__group">
-                        <input type="email" name="user_email" class="contact__input" id="user_email"placeholder="pablo_perez@gmail.com" required>
-                        <label for="email" class="contact__label">Correo</label>
-                        <span class="form__line"></span>
-                    </div>
-
-                    <div class="form__group">
-                        <input type="text" name="user_subject" class="contact__input" id="user_subject" placeholder="Subject" required>
-                        <label for="subject" class="contact__label">Asunto</label>
-                        <span class="form__line"></span>
-                    </div>
-                </div>
-
-
-                <div class="form__container-area">
                     
-                    <div class="form__group">
-                        <textarea name="user_message" id="user_message" class="contact__input" rows= 5 cols=21   placeholder="Mensaje..." required></textarea 
-                            <label for="message" class="contact__label">Mensaje</label>
-                        <span class="form__line"></span>
-                    </div>
-                </div>
-
-                <button type="submit" onclick="sendEmail()" id="button" class="form__button" value="ENVIAR MENSAJE" placeholder="Enviar">Enviar</button>
-
-            </form>          
-        </section>
+                    <button type="submit" id="button" value="Send Email" class="form__button" placeholder="Enviar">Enviar</button>
+    
+                </form>          
+            </section>
+        </div>
     </main>
 
     <footer class="footer">

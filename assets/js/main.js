@@ -28,27 +28,26 @@ const linkAction = () => {
 
 /*=============== EMAIL JS===============*/
 
-// function sendEmail(){
+const btn = document.getElementById('button');
 
-//     (function(){
-//         emailjs.init("mEM0k1SRHzeKj_zJs")
-//     })();
-//     let params = {
-//         user_name: document.querySelector("#user_name").value,
-//         last_name: document.querySelector("#last_name").value,
-//         user_email: document.querySelector("#user_email").value,
-//         user_subject: document.querySelector("#user_subject").value,
-//         user_message: document.querySelector("#user_message").value,
-//     };
-//     let serviceId = "service_oorclp3"
-//     let templateId = "template_wxoia4j"
+document.getElementById('contact-form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-//     emailjs.send('serviceId','templateId', params)
-//     .then(res =>{
-//         alert("Mensaje enviado correctamente");
-//     })
-//     .catch();
-// }
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_wxoia4j';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
 
 
 
