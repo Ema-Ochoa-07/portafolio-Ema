@@ -852,7 +852,7 @@ body.dark-theme{
 
 /*=============== FORM ===============*/
 .form__main{
-  max-width: 1200px;
+  max-width: 1060px;
   margin: 0 auto;
   width: 100%;
   .form__section{
@@ -885,7 +885,7 @@ body.dark-theme{
         padding: 3rem 1rem 1rem 1rem;
   
         .contact__label{
-          font-size: 20px;
+          font-size: 15px;
         }
   
         .contact__input{
@@ -914,9 +914,6 @@ body.dark-theme{
         top: 2rem;
         padding: 0rem 1rem 0 1rem;
   
-        .contact__label{
-          font-size: 20px;
-        }
   
         .contact__input{
           width: 100%;
@@ -926,10 +923,13 @@ body.dark-theme{
           border: 1.2px solid var(--body-color);
           margin-top: 4px;
           background-color: var(--container-color);
-  
+        }
+        .contact__label{
+          font-size: 10px;
+          margin-left: 1em;
         }
   
-        .contact__input:focus{
+        .contact__input-area:focus{
           outline: none;
           border-color: var(--first-color);
         }
