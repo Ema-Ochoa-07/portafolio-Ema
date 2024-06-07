@@ -650,6 +650,7 @@ body.dark-theme{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
 
   .studies__container{
     grid-template-columns: 250px;
@@ -661,7 +662,7 @@ body.dark-theme{
     flex-wrap:wrap;
     flex: 1 0 300px;
     margin: 0 auto;
-
+    }
 
 
     .studies__card{
@@ -669,67 +670,60 @@ body.dark-theme{
       display: flex;
       flex-wrap:wrap;
       flex: 1 0 200px;
-      
-      .studies__border{
-        display: flex;
-        position: inherit;
-
-      }
-      .studies__content{
-        height: 100%;
-        background-color: var(--body-color);
-        border: 4px solid var(--black-color);
-        padding: 6rem 1rem 3rem;
-        z-index: 3;
-        position: relative;
-        transition: background-color .4s;  
-        padding: 10px;
-
-        .studies__icon{
-
-          .studies__box{
-            position: absolute;
-            width: 24px;
-            height: 24px;
-            background-color: var(--container-color);
-            right: -2px;
-            top: -2px;
-          }
-        }
-        .studies__title{
-
-        }
-        .studies__description{
-
-        }
-      }
-      .studies__border{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: 4px solid var(--first-color);
-        top: 0;
-        left: 0;
-        transition: transform .4s;
-      }
-      .studies__content{
-        .studies__icon{
-          position: relative;
-          display: inline-block;
-        }
-        .studies__icon i{
-          font-size: 2rem;
-          color: var(--black-color);
-          position: relative;
-          z-index: 3;
-        }
-      }
     }
+      
+    .studies__border{
+      display: flex;
+      position: inherit;
+    }
+
+    .studies__content{
+      height: 100%;
+      background-color: var(--body-color);
+      border: 4px solid var(--black-color);
+      padding: 6rem 1rem 3rem;
+      z-index: 3;
+      position: relative;
+      transition: background-color .4s;  
+      padding: 10px;
+    }
+
+    .studies__box{
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-color: var(--container-color);
+      right: -2px;
+      top: -2px;
+    }
+    
+    .studies__icon{
+      position: relative;
+      display: inline-block;
+    }
+
+    .studies__icon i{
+      font-size: 2rem;
+      color: var(--black-color);
+      position: relative;
+      z-index: 3;
+      background-color: var(--first-color);
+    }        
+
+    .studies__border{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 4px solid var(--first-color);
+      top: 0;
+      left: 0;
+      transition: transform .4s;
+    }    
+
     .studies__card:hover .studies__border{
       transform: translate(.55rem, .55rem);
     }
-  }
-}
+
 
 
 /*=============== PROJECTS ===============*/
