@@ -168,22 +168,41 @@ img {
       background-color: var(--first-color);
     }
     
-     /*DARK MODE */
-     .ri-moon-line{
-      &:hover{
-        cursor: pointer;
-      }
-    }
-
-    body.dark{
-      background-color: #1A1B1E;
-     
-      .home__description{
-        color: var(--container-color);
-      }
-
-
-    }
+          /*---------SECTON DARK MODE--------------**/
+          body.dark{
+            background-color: #1A1B1E;
+              
+            .home__description,
+            .about__item,
+            .studies__title,
+            .projects__title,
+            .projects__type,
+            .contact__description-1,
+            .contact__description-2{
+              color: var(--container-color);
+            }
+    
+            .home__img{
+              box-shadow: rgb(216, 71, 4) 0px 3px 40px 0px, rgb(216, 71, 4) 0px 2px 60px 0px;
+            }  
+    
+            .studies__content, 
+            .about__info,
+            .studies__box,
+            .projects__card,
+            .contact__data,
+            .contact__input,
+            .contact__input-area{
+              background-color: #242527;
+            }
+    
+            .about__description-1,
+            .about__description-2,
+            .projects__description{
+              font-weight: 520;
+            }
+              
+          }
 
   }
 
