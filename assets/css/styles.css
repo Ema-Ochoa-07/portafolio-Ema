@@ -1051,6 +1051,10 @@ img {
     .nav{
       height: 4rem;
       padding: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
     }
 
     .nav__logo-circle{
@@ -1075,7 +1079,7 @@ img {
       position: relative;
       height: 50px;
       width: 450px;
-      top: -3.5rem;
+      top: -1.5em;
       display: flex;
       margin: 0 auto;
       flex-wrap: wrap;
@@ -1111,6 +1115,8 @@ img {
       }
 
       .ri-moon-line{
+        position: absolute;
+        top: 1.3em;
         color: bisque;
           &:hover{
             cursor: pointer;
