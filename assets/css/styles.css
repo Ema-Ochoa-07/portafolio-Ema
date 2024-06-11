@@ -37,6 +37,20 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+
+ 
+  /*========== Dark mode colors ==========*/
+  --first-color: hsl(14, 80%, 50%)
+  --black-color: hsl(0, 0%, 18%)	
+
+  --black-color-light: hsl(0, 0%, 30%)
+  --title-color: hsl(0, 0%, 95%)	
+
+  --text-color: hsl(0, 0%, 70%)	
+  --body-color: hsl(0, 0%, 8%)
+
+  --container-color: hsl(0,0%, 89%) 
+
 }
 
 /*========== Responsive typography ==========*/
@@ -161,14 +175,20 @@ img {
       backdrop-filter: blur(8px);
       transition: top -4s;
     }  
+
+    .ri-layout-4-line{
+      background-color: var(--first-color);
+    }
     
      /*DARK MODE */
-     .toogle__moon.active .ri-moon-line{
-      left: 1em;
+     .ri-moon-line{
+      &:hover{
+        cursor: pointer;
+      }
     }
 
-    body.active{
-      background-color: black;
+    body.dark{
+      background-color: #1A1B1E;
     }
 
   }
@@ -1105,15 +1125,14 @@ img {
 
       .ri-moon-line{
         color: bisque;
+          &:hover{
+            cursor: pointer;
+          }
       }
 
       /*DARK MODE */
-      .toogle__moon.active .ri-moon-line{
-        left: 1em;
-      }
-
-      body.active{
-        background-color: black;
+      body.dark{
+        background-color: #1A1B1E;
       }
 
       .nav__link-button{

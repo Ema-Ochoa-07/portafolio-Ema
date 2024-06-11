@@ -50,10 +50,31 @@ document.getElementById('contact-form')
 });
 
 
-const toogle_moon = document.querySelector('.toogle__moon')
-const body = document.querySelector('body')
+/*=============== DARK MODE===============*/
 
-toogle_moon.onclick = function(){
-    toogle_moon.classList.toggle('active')
-    body.classList.toggle('active')
+const toogle_moon = document.querySelector('.toogle__moon')
+const body = document.querySelector('.dark')
+
+toogle_moon.addEventListener("click", function(event){
+    let theBody = body.classList.toggle('dark')
+
+    // //Cambiar ícono
+    // let clicked = event.target.checked
+    // if(clicked == "true"){
+    //   toogle_moon.innerHTML = '<i class="ri-sun-fill"></i>'  
+    // } else{
+    //     toogle_moon.innerHTML = '<i class="ri-moon-line"></i>'
+    // }
+
+    //Mantener el modo aún cuando se actualice la página
+    localStorage.setItem(".toogle__moon", theBody)
+})
+
+let myBody = localStorage.getItem('.toogle__moon')
+if(myBody == "true"){
+    toogle_moon.innerHTML = '<i class="ri-moon-line"></i>' 
+    body.classList.add('dark')
+} else {
+    toogle_moon.innerHTML = '<i class="ri-sun-fill"></i>' 
+    body.classList.remove('dark')
 }
