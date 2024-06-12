@@ -1162,13 +1162,25 @@ img {
       }
 
       .ri-moon-line{
-        position: absolute;
-        top: 1.3em;
+        position: relative;
+        top: -0.7em;
+        left: 6em;
         color: bisque;
           &:hover{
             cursor: pointer;
           }
       }
+
+      .ri-sun-fill{
+        position: relative;
+        top: -0.7em;
+        left: 6em;
+        color: bisque;
+          &:hover{
+            cursor: pointer;
+          }
+      }
+        
 
       /*DARK MODE */
       body.dark{
@@ -1375,7 +1387,7 @@ img {
       /*---------SECTON DARK MODE--------------**/
       body.dark{
         background-color: #1A1B1E;
-          
+
         .home__description,
         .about__item,
         .studies__title,

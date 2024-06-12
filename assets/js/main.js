@@ -50,31 +50,51 @@ document.getElementById('contact-form')
 });
 
 
-/*=============== DARK MODE===============*/
+// /*=============== DARK MODE===============*/
 
-const toogle_moon = document.querySelector('.toogle__moon')
-const body = document.querySelector('.dark')
+// const toogle_moon = document.querySelector('.toogle__moon')
+// const body = document.querySelector('.dark')
 
-toogle_moon.addEventListener("click", function(event){
-    let theBody = body.classList.toggle('dark')
+// toogle_moon.addEventListener("click", function(event){
+//     let theBody = body.classList.toggle('dark')
 
-    // //Cambiar ícono
-    // let clicked = event.target.checked
-    // if(clicked == "true"){
-    //   toogle_moon.innerHTML = '<i class="ri-sun-fill"></i>'  
-    // } else{
-    //     toogle_moon.innerHTML = '<i class="ri-moon-line"></i>'
-    // }
+//     //Cambiar ícono
+//     if (body.classList.contains('dark')) {
+//         toogle_moon.innerHTML = '<i class="ri-moon-line"></i>'
+//     } else {
+//         toogle_moon.innerHTML = '<i class="ri-sun-fill"></i>'
+//     }
 
-    //Mantener el modo aún cuando se actualice la página
-    localStorage.setItem(".toogle__moon", theBody)
-})
+//     //Mantener el modo aún cuando se actualice la página
+//     localStorage.setItem(".toogle__moon", theBody)
+// })
 
-let myBody = localStorage.getItem('.toogle__moon')
-if(myBody == "true"){
-    toogle_moon.innerHTML = '<i class="ri-moon-line"></i>' 
-    body.classList.add('dark')
-} else {
-    toogle_moon.innerHTML = '<i class="ri-sun-fill"></i>' 
-    body.classList.remove('dark')
-}
+// let myBody = localStorage.getItem('.toogle__moon')
+
+        /*=============== DARK MODE ===============*/
+
+        const toogle_moon = document.querySelector('.toogle__moon')
+        const body = document.querySelector('body')
+
+        // Verificar el estado del modo oscuro en el localStorage al cargar la página
+        if (localStorage.getItem('darkMode') === 'true') {
+            body.classList.add('dark')
+            toogle_moon.innerHTML = '<i class="ri-moon-line"></i>'
+        } else {
+            body.classList.remove('dark')
+            toogle_moon.innerHTML = '<i class="ri-sun-fill"></i>'
+        }
+
+        toogle_moon.addEventListener("click", function() {
+            let theBody = body.classList.toggle('dark')
+
+            // Cambiar ícono
+            if (body.classList.contains('dark')) {
+                toogle_moon.innerHTML =  '<i class="ri-moon-line"></i>'
+                localStorage.setItem('darkMode', 'true')
+            } else {
+                toogle_moon.innerHTML = '<i class="ri-sun-fill"></i>'
+                localStorage.setItem('darkMode', 'false')
+            }
+        });
+
