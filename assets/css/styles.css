@@ -97,8 +97,26 @@ img {
   height: auto;
 }
 
+/*============ STYLES SWEEFT ALERT=============*/
+  .swal2-container.custom-container .swal2-popup {
+    background-color: aliceblue;
+     color: #242527; 
+  }
+        
+  .swal2-confirm.custom-confirm-button {
+    background-color: var(--first-color);
+    /* color: white; */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+   }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+  .swal2-icon.custom-icon{
+   background-color: aliceblue;
+  }
+
+
+/*=============== START STYLE ===============*/
 .container {
   max-width: 90%;
   margin-inline: 1.5rem;
@@ -143,7 +161,6 @@ img {
   top: initial;
   bottom: -4px;
 }
-
 
 
 .main {
@@ -230,6 +247,24 @@ img {
     
             .projects__card{
               border: 4px solid var(--black-color);
+            }
+
+            /*Styles Sweeft Alert**/
+            .swal2-container.custom-container .swal2-popup {
+              background-color: #242527;
+              color: aliceblue; 
+            }
+            
+            .swal2-confirm.custom-confirm-button {
+              background-color: var(--first-color);
+              /* color: white; */
+              border: none;
+              border-radius: 5px;
+              padding: 10px 20px;
+            }
+
+            .swal2-icon.custom-icon{
+              background-color: #242527;
             }
               
           }
@@ -1383,6 +1418,24 @@ img {
         background-color: var(--container-color);
       }
 
+         /*Styles Sweeft Alert**/
+         .swal2-container.custom-container .swal2-popup {
+          background-color: aliceblue;
+          color: #242527; 
+        }
+        
+        .swal2-confirm.custom-confirm-button {
+          background-color: var(--first-color);
+          /* color: white; */
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+        }
+
+        .swal2-icon.custom-icon{
+          background-color: aliceblue;
+        }
+
       
       /*---------SECTON DARK MODE--------------**/
       body.dark{
@@ -1442,6 +1495,25 @@ img {
 
         .projects__card{
           border: 4px solid var(--black-color);
+        }
+
+        
+        /*Styles Sweeft Alert**/
+        .swal2-container.custom-container .swal2-popup {
+          background-color: #242527;
+          color: aliceblue; 
+        }
+        
+        .swal2-confirm.custom-confirm-button {
+          background-color: var(--first-color);
+          /* color: white; */
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+        }
+
+        .swal2-icon.custom-icon{
+          background-color: #242527;
         }
           
       }

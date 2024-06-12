@@ -42,34 +42,34 @@ document.getElementById('contact-form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Sent!');
+      document.getElementById('contact-form').reset()
+        swal.fire({
+            title: "Felicitaciones!!",
+            text: "Se envió el mensaje correctamente!!",
+            icon: "success",
+            confirmButtonText: "Aceptar",
+            customClass: {
+                container: 'custom-container',
+                confirmButton: 'custom-confirm-button',
+                icon: 'custom-icon'
+            }
+        })
     }, (err) => {
       btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+      document.getElementById('contact-form').reset()
+        swal.fire({
+            title: "Ups!!",
+            text: "Ocurrió un error, intenta nuevamente!!",
+            icon: "warning",
+            confirmButtonText: "Aceptar",
+            customClass: {
+                container: 'custom-container',
+                confirmButton: 'custom-confirm-button',
+                icon: 'custom-icon'                
+            }
+        })
     });
 });
-
-
-// /*=============== DARK MODE===============*/
-
-// const toogle_moon = document.querySelector('.toogle__moon')
-// const body = document.querySelector('.dark')
-
-// toogle_moon.addEventListener("click", function(event){
-//     let theBody = body.classList.toggle('dark')
-
-//     //Cambiar ícono
-//     if (body.classList.contains('dark')) {
-//         toogle_moon.innerHTML = '<i class="ri-moon-line"></i>'
-//     } else {
-//         toogle_moon.innerHTML = '<i class="ri-sun-fill"></i>'
-//     }
-
-//     //Mantener el modo aún cuando se actualice la página
-//     localStorage.setItem(".toogle__moon", theBody)
-// })
-
-// let myBody = localStorage.getItem('.toogle__moon')
 
         /*=============== DARK MODE ===============*/
 
