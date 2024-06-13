@@ -87,7 +87,7 @@ ul {
   list-style: none;
 }
 
-a {
+a, i {
   text-decoration: none;
 }
 
