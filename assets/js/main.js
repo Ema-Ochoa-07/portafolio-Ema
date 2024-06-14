@@ -98,3 +98,28 @@ document.getElementById('contact-form')
             }
         });
 
+
+    /*=============== NAVBAR ACTIVE ===============*/
+    const sections = document.querySelectorAll('section')
+    const navbarListDOM = document.querySelector('.nav__list')
+    const navbarLinks = document.querySelectorAll('.nav__link')
+
+    function activeMenu () {
+        const scrollPosition = window.scrollY + 100
+
+
+         sections.forEach((section, index) => {
+            if(scrollPosition >= section.offsetTop
+                && scrollPosition < section.offsetTop + section.offsetHeight
+            ){
+                const activeLink = navbarListDOM.querySelector('.nav__link.active')
+                if(activeLink){
+                    activeLink.classList.remove('active')
+                }
+    
+                navbarLinks[index].classList.add('active')
+            }
+        })
+    }
+    window.addEventListener('scroll', activeMenu)
+
