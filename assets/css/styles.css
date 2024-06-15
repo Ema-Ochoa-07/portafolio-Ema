@@ -191,6 +191,22 @@ img {
       transition: top -4s;
     }  
 
+       /****IMAGE****/
+  .home__image{
+    display: flex;
+    flex: 2 0 250px;
+    width: 72%;
+    margin-top: 1em;
+    justify-content: center;
+  }
+
+  .home__img{
+    max-width: 90%;
+    position: relative;
+    box-shadow: rgb(38, 57, 77) 0px 3px 40px 0px, rgb(38, 57, 77) 0px 2px 60px 0px;
+    z-index: 2;
+  }
+
     .projects__card{
       background-color: var(--white-color);
     }
@@ -1314,7 +1330,7 @@ img {
       /****IMAGE****/
 
       .home__image{
-        width: 33.333%;
+        width: 25.333%;
         margin-top: 1em;
       }
 
