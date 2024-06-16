@@ -214,6 +214,12 @@ img {
     .ri-layout-4-line{
       background-color: var(--first-color);
     }
+
+    
+    .studies__section{
+      padding-top: 3.5em;
+      padding-bottom: 4em;
+    }
     
           /*---------SECTON DARK MODE--------------**/
           body.dark{
@@ -680,7 +686,6 @@ img {
 
 /*=============== studies ===============*/
 .studies__section{
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -720,6 +725,7 @@ img {
       position: relative;
       transition: background-color .4s;  
       padding: 10px;
+
     }
 
     .studies__box{
@@ -837,7 +843,7 @@ img {
     .contact__data{
       position: relative;
       width: 100%;
-      height: max-content;
+      /* height: max-content; */
       /* background-color: var(--body-color); */
       margin-left: auto;
       border-bottom: 4px solid var(--first-color);
@@ -1401,17 +1407,31 @@ img {
       margin: 0 auto;
       justify-content: center;
       max-width: 1060px;
-      width: 100%;    
+      width: 100%;
       }
 
       .studies__description{
         font-size: 20px;
         padding-top: 20px;
+      }
 
+      
+      .studies__section{
+        padding-top: 5.2em;
+        padding-bottom: 6.3em;
       }
 
       .ri-layout-4-line, .ri-code-box-line, .ri-smartphone-line {
         background-color: var(--first-color);
+      }
+
+      /*---------PROJECTS STUDIES--------------**/      
+      .projects__section{
+        padding-bottom: 3em;
+      }
+
+      .projects__card{
+        background-color: var(--white-color);
       }
 
       /*---------CONTACT STUDIES-------------**/
@@ -1419,16 +1439,13 @@ img {
         max-height: max-content;
         padding-bottom: 10em;
       }
+      
       .projects__container{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         max-width: 1060px;
-      }
-
-      .projects__card{
-        background-color: var(--white-color);
       }
 
       /*---------SECTON CONTACT--------------**/
@@ -1462,8 +1479,7 @@ img {
         .swal2-icon.custom-icon{
           background-color: aliceblue;
         }
-
-        
+       
         /*---------ACTIVE MENU--------------**/
         .nav__link.active{
           border-bottom: 3px solid var(--first-color);
@@ -1547,8 +1563,7 @@ img {
 
         .swal2-icon.custom-icon{
           background-color: #242527;
-        }
-        
+        }      
 
       }
          
